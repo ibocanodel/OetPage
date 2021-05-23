@@ -41,7 +41,7 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
-      <h1 class="logo me-auto"><a href="index.html">OET<span>.</span></a></h1>
+      <h1 class="logo me-auto"><a href="index.html">Online Education Tool</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
 
@@ -213,7 +213,7 @@
           <li class="nav-item col-3">
             <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
               <i class="ri-user-3-line"></i>
-              <h4 class="d-none d-lg-block">Modi sit est dela pireda nest</h4>
+              <h4 class="d-none d-lg-block">Student</h4>
             </a>
           </li>
           <li class="nav-item col-3">
@@ -234,24 +234,26 @@
           <div class="tab-pane active show" id="tab-1">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
-                <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                <h3>The center of our system is of course students who want to improve their English.</h3>
                 <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                  We offer them an environment where they can exercise and learn in an efficient and fun way.
                 </p>
                 <ul>
-                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                  <li><i class="ri-check-double-line"></i> They can solve a wide variety of questions without worry of losing their answers.
+                    The system will automatically save all the answers, so they can continue where they left even if accidentally exits.</li>
+                  <li><i class="ri-check-double-line"></i> Apart from assignments specific to their class, students will have an option to see questions of their own difficulty level starting from easy.
+                    They will be able to level up while getting more and more correct results. </li>
+                  <li><i class="ri-check-double-line"></i> They can choose articles to read based on their interested categories.
+                  Besides, they can highlight parts they want and take their own online notes for each assignment. </li>
+                  <li><i class="ri-check-double-line"></i> They can reach their past assignments and grades together with the histogram of their class.
+                    Students who are eager to see performance of themselves can view how much time they spent on each assignment.</li>
+                  <li><i class="ri-check-double-line"></i> They will be notified when a new assignment is posted, or the instructor gives a feedback. </li>
+                  <li><i class="ri-check-double-line"></i> In order to improve their pronunciation, we support Text-to-Speech feature for all the reading assignments.
+                    Thus, they can hear the text by a native speaker.</li>
                 </ul>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
-                </p>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
-                <img src="assets/img/tabs-1.jpg" alt="" class="img-fluid">
+                <img src="assets/img/student.jpg" alt="" class="img-fluid">
               </div>
             </div>
           </div>
@@ -283,7 +285,7 @@
                 </p>
                 <ul>
                   <li><i class="ri-check-double-line"></i> They can create new accounts for students and instructors.</li>
-                  <li><i class="ri-check-double-line"></i> They can create new classrooms by specifying some attributes such as capacity, english level etc.</li>
+                  <li><i class="ri-check-double-line"></i> They can create new classrooms by specifying some attributes such as capacity, english level, etc.</li>
                   <li><i class="ri-check-double-line"></i> They can add students/instructors to existing classrooms.</li>
                   <li><i class="ri-check-double-line"></i> They can list existing accounts/classrooms. Also, they can update some attributes of accounts and classrooms.</li>
                 </ul>
@@ -868,17 +870,19 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <label for="name"></label><input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
                 <div class="col form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <label for="email"></label><input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <label for="subject"></label><input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <label>
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                </label>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
@@ -940,7 +944,9 @@
             <h4>Join Our Newsletter</h4>
             <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
             <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+              <label>
+                <input type="email" name="email">
+              </label><input type="submit" value="Subscribe">
             </form>
           </div>
 
